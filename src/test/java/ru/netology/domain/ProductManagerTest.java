@@ -9,7 +9,7 @@ public class ProductManagerTest {
 
     Book book1 = new Book(12, 550, "Метро 2033", "Глуховский");
     Book book2 = new Book(24, 780, "Спартак", "Джованьоли");
-    Book book3 = new Book(31,1500, "Шантарам", "Робертс");
+    Book book3 = new Book(31, 1500, "Шантарам", "Робертс");
 
     Smartphone smartphone1 = new Smartphone(10, 35000, "Iphone", "Apple");
     Smartphone smartphone2 = new Smartphone(23, 30000, "Readmi", "Xiaomi");
@@ -157,7 +157,6 @@ public class ProductManagerTest {
         assertArrayEquals(expected, actual);
     }
 
-
     @Test
     public void shouldNotAddProducts() {
         manager.add(book1);
@@ -181,21 +180,4 @@ public class ProductManagerTest {
 
         assertArrayEquals(expected, actual);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
